@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import HomeIcon from '@material-ui/icons/Home';
+import SearchIcon from '@material-ui/icons/Search';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> fact Fact checking</h1>
+      <Sidebar Icon ={HomeIcon} text="Home"/>
+      <Sidebar Icon ={SearchIcon} text="Explore"/>
+      <Sidebar Icon ={NotificationsIcon} text="Home"/>
+      <Sidebar Icon ={HomeIcon} text="Home"/>
+
     </div>
   );
 }
